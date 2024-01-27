@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import "./App.css";
+import { ChakraProvider } from '@chakra-ui/react'
 
+ReactDom.render (
+  <ChakraProvider>
+    <App/>
+  </ChakraProvider>,
+  document.getElementById('root')
+)
 
 
 function App() {
